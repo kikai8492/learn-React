@@ -1,18 +1,23 @@
 import React from "react";
+import TitleMessage from "./components/TitleMessage";
 import ColorfulMessage from "./components/ColorfulMessage";
 
 const App = () => {
   const onClickButton = () => alert();
-  const contentLedyStyle = {
-    color: "pink",
-    fontSize: "18px",
-  };
 
   return (
     <React.Fragment>
-      <h1 style={{ color: "red" }}>React App</h1>
-      <ColorfulMessage color="green" message="React" />
-      <ColorfulMessage color="pink" message="React.js学習中" />
+      <TitleMessage color="red" fontSize="100px">
+        React App
+      </TitleMessage>
+
+      <ColorfulMessage color="green" fontSize="50px">
+        React
+      </ColorfulMessage>
+
+      <ColorfulMessage color="pink" fontSize="25px">
+        React.js
+      </ColorfulMessage>
 
       <button onClick={onClickButton}>ボタン</button>
     </React.Fragment>
