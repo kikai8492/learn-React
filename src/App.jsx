@@ -45,7 +45,7 @@ const App = () => {
       </ColorfulMessage>
 
       <ColorfulMessage color="pink" fontSize="25px">
-        ピンクのカラフルメッセージです
+        ピンクのカラフルメッセージ
       </ColorfulMessage>
 
       <button onClick={onClickCountUp}>カウントアップ</button>
