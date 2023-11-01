@@ -1,13 +1,4 @@
 import React from "react";
-
-export const ColorfulMessage = (props) => {
-  const contentStyle = {
-    color: props.color,
-    fontSize: props.fontSize,
-  };
-  return <p style={contentStyle}>{props.children}</p>; //childrenで表示したい文字列を表示できる
-};
-
 export const TitleMessage = (props) => {
   const titleStyle = {
     color: props.color,
@@ -24,4 +15,11 @@ export const SubTitleMessage = (props) => {
   };
   return <h2 style={subTitleStyle}>{children}</h2>;
 };
-// export default ColorfulMessage;
+
+export const ColorfulMessage = (props) => {
+  const contentStyle = {
+    color: props.color,
+    fontSize: props.fontSize,
+  };
+  return <p style={contentStyle}>{props.children}</p>; //childrenで表示したい文字列を表示できる
+};
