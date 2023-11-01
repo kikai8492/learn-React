@@ -1,7 +1,7 @@
 import React from "react";
 import TitleMessage from "./components/TitleMessage";
 import ColorfulMessage from "./components/ColorfulMessage";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -17,6 +17,14 @@ const App = () => {
   const onClickSwitchShowFlag = () => {
     setFaceShowFlag(!faceShowFlag);
   };
+
+  useEffect(() => {
+    if (num % 3 === 0) {
+      setFaceShowFlag(true);
+    } else {
+      setFaceShowFlag(false);
+    }
+  }, [num]);
 
   return (
     <React.Fragment>
