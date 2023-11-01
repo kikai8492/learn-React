@@ -1,6 +1,10 @@
 import React from "react";
-import TitleMessage from "./components/TitleMessage";
-import ColorfulMessage from "./components/ColorfulMessage";
+// import TitleMessage from "./components/TitleMessage";
+import {
+  ColorfulMessage,
+  SubTitleMessage,
+  TitleMessage,
+} from "./components/ColorfulMessage";
 import { useState, useEffect } from "react";
 
 const App = () => {
@@ -29,15 +33,19 @@ const App = () => {
   return (
     <React.Fragment>
       <TitleMessage color="red" fontSize="100px">
-        React App
+        タイトルです
       </TitleMessage>
 
+      <SubTitleMessage color="blue" fontSize="50px">
+        分割代入を使ったサブタイトルです
+      </SubTitleMessage>
+
       <ColorfulMessage color="green" fontSize="50px">
-        React
+        緑のカラフルメッセージです
       </ColorfulMessage>
 
       <ColorfulMessage color="pink" fontSize="25px">
-        React.js
+        ピンクのカラフルメッセージです
       </ColorfulMessage>
 
       <button onClick={onClickCountUp}>カウントアップ</button>
