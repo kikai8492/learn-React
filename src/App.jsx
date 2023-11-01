@@ -5,12 +5,17 @@ import { useState } from "react";
 
 const App = () => {
   const [num, setNum] = useState(0);
+  const [faceShowFlag, setFaceShowFlag] = useState(true);
   const onClickCountUp = () => {
     setNum(num + 1);
   };
 
   const onClickCountDown = () => {
     setNum(num - 1);
+  };
+
+  const onClickSwitchShowFlag = () => {
+    setFaceShowFlag(!faceShowFlag);
   };
 
   return (
@@ -29,7 +34,10 @@ const App = () => {
 
       <button onClick={onClickCountUp}>カウントアップ</button>
       <button onClick={onClickCountDown}>カウントダウン</button>
+      <br />
+      <button onClick={onClickSwitchShowFlag}>on/off</button>
       <p>{num}</p>
+      {faceShowFlag && <p>Σ('◉⌓◉’)</p>}
     </React.Fragment>
   );
 };
