@@ -33,7 +33,7 @@ const App = () => {
   return (
     <React.Fragment>
       <TitleMessage color="red" fontSize="100px">
-        タイトル
+        タイトルメッセージです
       </TitleMessage>
 
       <SubTitleMessage color="blue" fontSize="50px">
