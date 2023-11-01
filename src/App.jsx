@@ -33,11 +33,11 @@ const App = () => {
   return (
     <React.Fragment>
       <TitleMessage color="red" fontSize="100px">
-        タイトルメッセージです
+        タイトルメッセージ
       </TitleMessage>
 
       <SubTitleMessage color="blue" fontSize="50px">
-        分割代入を使ったサブタイトルです
+        分割代入を使ったサブタイトルメッセージ
       </SubTitleMessage>
 
       <ColorfulMessage color="green" fontSize="50px">
