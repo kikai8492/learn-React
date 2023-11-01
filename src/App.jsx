@@ -41,7 +41,7 @@ const App = () => {
       </SubTitleMessage>
 
       <ColorfulMessage color="green" fontSize="50px">
-        緑のカラフルメッセージです
+        緑のカラフルメッセージ
       </ColorfulMessage>
 
       <ColorfulMessage color="pink" fontSize="25px">
